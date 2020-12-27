@@ -1,0 +1,366 @@
+@prefix : <http://www.exampleThingPrivacyVocabulary.org/2020/sp#> .
+@prefix sp: <http://www.exampleThingPrivacyVocabulary.org/2020/sp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix 3LConOnt: <http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology> .
+@prefix jsonschema: <https://www.w3.org/2019/wot/json-schema#> .
+@base <http://www.exampleThingPrivacyVocabulary.org/2020/sp#> .
+
+<http://www.exampleThingPrivacyVocabulary.org/2020/sp#> rdf:type owl:Ontology ;
+                                                         rdfs:comment "Situation Privacy vocabulary"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#Description
+sp:Description rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#bindSituation
+sp:bindSituation rdf:type owl:ObjectProperty ;
+                 rdfs:domain sp:SituationPrivacyThing ;
+                 rdfs:range sp:Situation ;
+                 rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#bindSituation"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#conditionType
+sp:conditionType rdf:type owl:ObjectProperty ;
+                 rdfs:domain sp:PropertyComposition ;
+                 rdfs:range sp:ConditionType ;
+                 rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#conditionType"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#constraintAssignement
+sp:constraintAssignement rdf:type owl:ObjectProperty ;
+                         rdfs:domain sp:Privacy ;
+                         rdfs:range sp:PrivacyRequirement ;
+                         rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#constraintAssignement"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasComposedProperties
+sp:hasComposedProperties rdf:type owl:ObjectProperty ;
+                         rdfs:domain sp:SituationProperties ;
+                         rdfs:range sp:PropertyComposition ;
+                         rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasComposedProperties"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasOperationType
+sp:hasOperationType rdf:type owl:ObjectProperty ;
+                    rdfs:domain sp:Operation ;
+                    rdfs:range sp:OperationTypes ;
+                    rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasoperationType"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasProperty
+sp:hasProperty rdf:type owl:ObjectProperty ;
+               rdfs:domain sp:PropertyComposition ;
+               rdfs:range sp:SituationProperties ;
+               rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasProperty"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasPropertyType
+sp:hasPropertyType rdf:type owl:ObjectProperty ;
+                   rdfs:domain sp:SituationProperties ;
+                   rdfs:range jsonschema:DataSchema ;
+                   rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasPropertyType"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasSituationProperties
+sp:hasSituationProperties rdf:type owl:ObjectProperty ;
+                          rdfs:domain sp:Situation ;
+                          rdfs:range sp:SituationProperties ;
+                          rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#hasSituationProperties"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationAssignement
+sp:operationAssignement rdf:type owl:ObjectProperty ;
+                        rdfs:domain sp:Privacy ;
+                        rdfs:range sp:Operation ;
+                        rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationAssignement"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationExecutor
+sp:operationExecutor rdf:type owl:ObjectProperty ;
+                     rdfs:domain sp:Operation ;
+                     rdfs:range sp:SituationPrivacyThing ;
+                     rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationExecutor"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#privacyAwareness
+sp:privacyAwareness rdf:type owl:ObjectProperty ;
+                    rdfs:domain sp:Situation ;
+                    rdfs:range sp:Privacy ;
+                    rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#privacyAwareness"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#requirementOperation
+sp:requirementOperation rdf:type owl:ObjectProperty ;
+                        rdfs:domain sp:PrivacyRequirement ;
+                        rdfs:range sp:OperationTypes ;
+                        rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#requirementOperation"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#requirementThing
+sp:requirementThing rdf:type owl:ObjectProperty ;
+                    rdfs:domain sp:PrivacyRequirement ;
+                    rdfs:range sp:SituationPrivacyThing ;
+                    rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#requirementThing"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#requirementsProperties
+sp:requirementsProperties rdf:type owl:ObjectProperty ;
+                          rdfs:domain sp:PrivacyRequirement ;
+                          rdfs:range sp:SituationProperties ;
+                          rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#requirementsProperties"@nsuri .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#logicalOperator
+sp:logicalOperator rdf:type owl:DatatypeProperty ;
+                   rdfs:domain sp:EEnum ;
+                   rdfs:range xsd:integer ;
+                   rdfs:isDefinedBy "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#logicalOperator" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationName
+sp:operationName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sp:Operation ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationName"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#operationType
+sp:operationType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sp:EEnum ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#propertyName
+sp:propertyName rdf:type owl:DatatypeProperty ;
+                rdfs:domain sp:SituationProperties ;
+                rdfs:range xsd:string ;
+                rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#propertyName"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#situationName
+sp:situationName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sp:Situation ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#situationName"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#situationPurpose
+sp:situationPurpose rdf:type owl:DatatypeProperty ;
+                    rdfs:domain sp:Situation ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#situationPurpose"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#thingName
+sp:thingName rdf:type owl:DatatypeProperty ;
+             rdfs:domain sp:SituationPrivacyThing ;
+             rdfs:range xsd:string ;
+             rdfs:comment "IRI : http://www.exampleThingPrivacyVocabulary.org/2020/sp#thingName"@nsuri .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology#ContextInformation
+<http://gessi.lsi.upc.edu/threelevelcontextmodelling/ThreeLContextOnt/UpperLevelOntology#ContextInformation> rdf:type owl:Class ;
+                                                                                                             owl:equivalentClass sp:Situation .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#Class
+sp:Class rdf:type owl:Class .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#ConditionType
+sp:ConditionType rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:oneOf ( sp:ConditionType_and
+                                                   sp:ConditionType_or
+                                                   sp:ConditionType_xor
+                                                 )
+                                     ] ;
+                 rdfs:subClassOf sp:EEnum ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty sp:conditionType ;
+                                   owl:allValuesFrom sp:ConditionType
+                                 ] ;
+                 rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#ConditionType"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#EEnum
+sp:EEnum rdf:type owl:Class .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#EPackage
+sp:EPackage rdf:type owl:Class .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#Operation
+sp:Operation rdf:type owl:Class ;
+             rdfs:subClassOf sp:Class ;
+             rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#Operation"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#OperationTypes
+sp:OperationTypes rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:oneOf ( sp:OperationType_collectData
+                                                    sp:OperationType_processData
+                                                    sp:OperationType_storeData
+                                                    sp:OperationType_transferData
+                                                  )
+                                      ] ;
+                  rdfs:subClassOf sp:EEnum ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty sp:hasOperationType ;
+                                    owl:allValuesFrom sp:OperationTypes
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty sp:requirementOperation ;
+                                    owl:allValuesFrom sp:OperationTypes
+                                  ] ;
+                  rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#OperationTypes"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#Privacy
+sp:Privacy rdf:type owl:Class ;
+           rdfs:subClassOf sp:Class ;
+           rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#Privacy"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#PrivacyRequirement
+sp:PrivacyRequirement rdf:type owl:Class ;
+                      rdfs:subClassOf sp:Class ;
+                      sp:Description "Describes the requirements of the operation"^^xsd:string ;
+                      rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#PrivacyRequirement"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#PropertyComposition
+sp:PropertyComposition rdf:type owl:Class ;
+                       rdfs:subClassOf sp:Class ;
+                       rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#PropertyCompositon"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#Situation
+sp:Situation rdf:type owl:Class ;
+             rdfs:subClassOf sp:Class ;
+             rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#Situation"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#SituationPrivacy
+sp:SituationPrivacy rdf:type owl:Class ;
+                    rdfs:subClassOf sp:EPackage ;
+                    rdfs:comment "http://www.eclipse.org/wot/sp/1.0"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#SituationPrivacyThing
+sp:SituationPrivacyThing rdf:type owl:Class ;
+                         rdfs:subClassOf sp:Class ;
+                         rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#SituationPrivacyThing"@nsuri .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#SituationProperties
+sp:SituationProperties rdf:type owl:Class ;
+                       rdfs:subClassOf sp:Class ;
+                       rdfs:comment "IRI : http://www.exampleThingPrivcyVocabulary.org/2020/sp#SituationProperties"@nsuri .
+
+
+###  https://www.w3.org/2019/wot/json-schema#DataSchema
+jsonschema:DataSchema rdf:type owl:Class ;
+                      rdfs:subClassOf sp:Class ;
+                      rdfs:comment "IRI: https://www.w3.org/2019/wot/json-schema#DataSchema"@nsuri .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#ConditionType_and
+sp:ConditionType_and rdf:type owl:NamedIndividual ,
+                              sp:ConditionType ;
+                     sp:logicalOperator "0"^^xsd:int ;
+                     sp:operationType "and" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#ConditionType_or
+sp:ConditionType_or rdf:type owl:NamedIndividual ,
+                             sp:ConditionType ;
+                    sp:logicalOperator "1"^^xsd:int ;
+                    sp:operationType "or" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#ConditionType_xor
+sp:ConditionType_xor rdf:type owl:NamedIndividual ,
+                              sp:ConditionType ;
+                     sp:logicalOperator "2"^^xsd:int ;
+                     sp:operationType "xor" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#OperationType_collectData
+sp:OperationType_collectData rdf:type owl:NamedIndividual ,
+                                      sp:OperationTypes ;
+                             sp:logicalOperator "1"^^xsd:int ;
+                             sp:operationType "collectData" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#OperationType_processData
+sp:OperationType_processData rdf:type owl:NamedIndividual ,
+                                      sp:OperationTypes ;
+                             sp:logicalOperator "3"^^xsd:int ;
+                             sp:operationType "processData" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#OperationType_storeData
+sp:OperationType_storeData rdf:type owl:NamedIndividual ,
+                                    sp:OperationTypes ;
+                           sp:logicalOperator "0"^^xsd:int ;
+                           sp:operationType "storeData" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#OperationType_transferData
+sp:OperationType_transferData rdf:type owl:NamedIndividual ,
+                                       sp:OperationTypes ;
+                              sp:logicalOperator "2"^^xsd:int ;
+                              sp:operationType "transferData" .
+
+
+###  http://www.exampleThingPrivacyVocabulary.org/2020/sp#SituationPrivacyThing_HvqjEDGhEeukprZNUg_xuw
+sp:SituationPrivacyThing_HvqjEDGhEeukprZNUg_xuw rdf:type owl:NamedIndividual .
+
+
+[ owl:maxCardinality "1"^^xsd:int
+] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
