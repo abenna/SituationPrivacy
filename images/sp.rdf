@@ -1,0 +1,919 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.examplePrivacySchema.org/wot/sp/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dtype="http://www.srdc.com.tr/ontmalizer#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDatatype">
+    <owl:equivalentClass rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#shortDatatype">
+    <owl:equivalentClass rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#Privacy"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#privacyAwareness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#operationName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationPrivacyThing"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationExecutor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NOTATIONDatatype">
+    <owl:equivalentClass rdf:nodeID="A6"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#NOTATION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#SituationProperties">
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationProperties"/>
+    <rdfs:subClassOf rdf:nodeID="A8"/>
+    <rdfs:subClassOf rdf:nodeID="A9"/>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdfs:subClassOf rdf:nodeID="A12"/>
+    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype">
+    <owl:equivalentClass rdf:nodeID="A14"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#booleanDatatype">
+    <owl:equivalentClass rdf:nodeID="A15"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#NCName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#bindSituation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationExecutor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#condition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.srdc.com.tr/ontmalizer#hasValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationProperties"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#propertyName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2147483647</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#tokenDatatype">
+    <owl:equivalentClass rdf:nodeID="A22"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2147483647</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementOperation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#IDREFDatatype">
+    <owl:equivalentClass rdf:nodeID="A24"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#IDREF"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.srdc.com.tr/ontmalizer#hasValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_collectData">
+    <dtype:hasValue>collectData</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2147483647</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementsProperties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.srdc.com.tr/ontmalizer#Enumeration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShortDatatype">
+    <owl:equivalentClass rdf:nodeID="A27"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURIDatatype">
+    <owl:equivalentClass rdf:nodeID="A28"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#composed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#base64BinaryDatatype">
+    <owl:equivalentClass rdf:nodeID="A29"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationPrivacyThing"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementThing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#textContent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationTypeDatatype"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#textContent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperties">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_Enumeration">
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_processData"/>
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_transferData"/>
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_collectData"/>
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_storeData"/>
+    <rdf:type rdf:resource="http://www.srdc.com.tr/ontmalizer#Enumeration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonthDatatype">
+    <owl:equivalentClass rdf:nodeID="A35"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NCNameDatatype">
+    <owl:equivalentClass rdf:nodeID="A16"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#NCName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2147483647</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#constraintAssignement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype">
+    <owl:equivalentClass rdf:nodeID="A43"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#longDatatype">
+    <owl:equivalentClass rdf:nodeID="A34"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#hexBinaryDatatype">
+    <owl:equivalentClass rdf:nodeID="A44"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#ENTITYDatatype">
+    <owl:equivalentClass rdf:nodeID="A45"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#ENTITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.srdc.com.tr/ontmalizer#hasValue">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#propertyType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateDatatype">
+    <owl:equivalentClass rdf:nodeID="A46"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2147483647</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#privacyAwareness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#propertyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.w3.org/2001/XMLSchema#textContent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#PrivacyRequirement"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#constraintAssignement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDayDatatype">
+    <owl:equivalentClass rdf:nodeID="A51"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#propertyName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#PrivacyRequirement">
+    <rdfs:subClassOf rdf:nodeID="A26"/>
+    <rdfs:subClassOf rdf:nodeID="A23"/>
+    <rdfs:subClassOf rdf:nodeID="A30"/>
+    <rdfs:subClassOf rdf:nodeID="A52"/>
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#PrivacyRequirement"/>
+    <rdfs:subClassOf rdf:nodeID="A53"/>
+    <rdfs:subClassOf rdf:nodeID="A54"/>
+    <rdfs:subClassOf rdf:nodeID="A55"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A56"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#Situation"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#bindSituation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementOperation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionTypeDatatype">
+    <owl:equivalentClass rdf:nodeID="A59"/>
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType"/>
+    <owl:equivalentClass rdf:nodeID="A58"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType">
+    <owl:oneOf rdf:nodeID="A60"/>
+    <rdfs:subClassOf rdf:nodeID="A61"/>
+    <rdfs:subClassOf rdf:resource="http://www.srdc.com.tr/ontmalizer#EnumeratedValue"/>
+    <rdfs:subClassOf rdf:nodeID="A25"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#Operation">
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#Operation"/>
+    <rdfs:subClassOf rdf:nodeID="A62"/>
+    <rdfs:subClassOf rdf:nodeID="A63"/>
+    <rdfs:subClassOf rdf:nodeID="A64"/>
+    <rdfs:subClassOf rdf:nodeID="A65"/>
+    <rdfs:subClassOf rdf:nodeID="A33"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#ID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_and">
+    <dtype:hasValue>and</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NameDatatype">
+    <owl:equivalentClass rdf:nodeID="A68"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#propertyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationProperties"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementsProperties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:rest rdf:nodeID="A70"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_transferData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_xor">
+    <dtype:hasValue>xor</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#SituationPrivacyThing">
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationPrivacyThing"/>
+    <rdfs:subClassOf rdf:nodeID="A71"/>
+    <rdfs:subClassOf rdf:nodeID="A72"/>
+    <rdfs:subClassOf rdf:nodeID="A73"/>
+    <rdfs:subClassOf rdf:nodeID="A74"/>
+    <rdfs:subClassOf rdf:nodeID="A57"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationTypeDatatype">
+    <owl:equivalentClass rdf:nodeID="A75"/>
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType"/>
+    <owl:equivalentClass rdf:nodeID="A76"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A77">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#intDatatype">
+    <owl:equivalentClass rdf:nodeID="A77"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_or">
+    <dtype:hasValue>or</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A79">
+    <rdf:rest rdf:nodeID="A80"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_storeData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationAssignement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#IDREFSDatatype">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#languageDatatype">
+    <owl:equivalentClass rdf:nodeID="A36"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#thingName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#NOTATION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#privacyAwareness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2147483647</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#bindSituation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#composed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#textContent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#doubleDatatype">
+    <owl:equivalentClass rdf:nodeID="A18"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_Enumeration">
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_xor"/>
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_or"/>
+    <dtype:hasValue rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_and"/>
+    <rdf:type rdf:resource="http://www.srdc.com.tr/ontmalizer#Enumeration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#NMTOKENDatatype">
+    <owl:equivalentClass rdf:nodeID="A84"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#NMTOKEN"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#constraintAssignement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#byteDatatype">
+    <owl:equivalentClass rdf:nodeID="A83"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionTypeDatatype"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyType">
+    <rdfs:subClassOf rdf:nodeID="A88"/>
+    <rdfs:subClassOf rdf:nodeID="A32"/>
+    <rdfs:subClassOf rdf:nodeID="A49"/>
+    <rdfs:subClassOf rdf:nodeID="A89"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementsProperties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#Operation"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationAssignement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#textContent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#operationExecutor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anySimpleTypeDatatype">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#ENTITIESDatatype">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#operationType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#requirementsProperties">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A92">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_xor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype">
+    <owl:equivalentClass rdf:nodeID="A78"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A93">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#QName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#durationDatatype">
+    <owl:equivalentClass rdf:nodeID="A82"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#IDDatatype">
+    <owl:equivalentClass rdf:nodeID="A66"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#ID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#operationAssignement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#thingName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLongDatatype">
+    <owl:equivalentClass rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#Situation">
+    <rdfs:subClassOf rdf:nodeID="A21"/>
+    <rdfs:subClassOf rdf:nodeID="A47"/>
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#Situation"/>
+    <rdfs:subClassOf rdf:nodeID="A94"/>
+    <rdfs:subClassOf rdf:nodeID="A31"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdfs:subClassOf rdf:nodeID="A95"/>
+    <rdfs:subClassOf rdf:nodeID="A96"/>
+    <rdfs:subClassOf rdf:nodeID="A40"/>
+    <rdfs:subClassOf rdf:nodeID="A67"/>
+    <rdfs:subClassOf rdf:nodeID="A97"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#propertyName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#PropertyComposition"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#composed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_storeData">
+    <dtype:hasValue>storeData</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A95">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#SituationProperties"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#ENTITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#requirementThing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gYearDatatype">
+    <owl:equivalentClass rdf:nodeID="A48"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A97">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationPurpose"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A98">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A94">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#privacyAwareness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#Privacy">
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#Privacy"/>
+    <rdfs:subClassOf rdf:nodeID="A42"/>
+    <rdfs:subClassOf rdf:nodeID="A85"/>
+    <rdfs:subClassOf rdf:nodeID="A50"/>
+    <rdfs:subClassOf rdf:nodeID="A81"/>
+    <rdfs:subClassOf rdf:nodeID="A90"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A99">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_processData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.srdc.com.tr/ontmalizer#EnumeratedValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedIntDatatype">
+    <owl:equivalentClass rdf:nodeID="A41"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#normalizedStringDatatype">
+    <owl:equivalentClass rdf:nodeID="A38"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A100">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#floatDatatype">
+    <owl:equivalentClass rdf:nodeID="A99"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementThing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_transferData">
+    <dtype:hasValue>transferData</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <rdf:rest rdf:nodeID="A69"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_collectData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#PropertyComposition">
+    <rdfs:subClassOf rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#PropertyComposition"/>
+    <rdfs:subClassOf rdf:nodeID="A87"/>
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdfs:subClassOf rdf:nodeID="A101"/>
+    <rdfs:subClassOf rdf:nodeID="A20"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <owl:onDatatype rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <owl:allValuesFrom rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationTypeDatatype"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#requirementOperation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType">
+    <owl:oneOf rdf:nodeID="A79"/>
+    <rdfs:subClassOf rdf:nodeID="A19"/>
+    <rdfs:subClassOf rdf:resource="http://www.srdc.com.tr/ontmalizer#EnumeratedValue"/>
+    <rdfs:subClassOf rdf:nodeID="A102"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#situationPurpose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.srdc.com.tr/ontmalizer#hasValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A103">
+    <rdf:rest rdf:nodeID="A92"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_or"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A102">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.srdc.com.tr/ontmalizer#hasValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gDayDatatype">
+    <owl:equivalentClass rdf:nodeID="A100"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeDatatype">
+    <owl:equivalentClass rdf:nodeID="A91"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A96">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationPurpose"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</owl:minCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#bindSituation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A101">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#situationProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#situationName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <owl:onDatatype rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#QNameDatatype">
+    <owl:equivalentClass rdf:nodeID="A93"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#QName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#NMTOKEN"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2001/XMLSchema#textContent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#constraintAssignement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#thingName"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimalDatatype">
+    <owl:equivalentClass rdf:nodeID="A98"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype">
+    <owl:equivalentClass rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#requirementOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#operationType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#IDREF"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integerDatatype">
+    <owl:equivalentClass rdf:nodeID="A104"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#timeDatatype">
+    <owl:equivalentClass rdf:nodeID="A39"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A104">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType_processData">
+    <dtype:hasValue>processData</dtype:hasValue>
+    <rdf:type rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#OperationType"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <rdf:rest rdf:nodeID="A103"/>
+    <rdf:first rdf:resource="http://www.examplePrivacySchema.org/wot/sp/v1#ConditionType_and"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#stringDatatype">
+    <owl:equivalentClass rdf:nodeID="A37"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByteDatatype">
+    <owl:equivalentClass rdf:nodeID="A86"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+</rdf:RDF>

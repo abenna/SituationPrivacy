@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:sp="http://www.examplePrivacySchema.org/wot/sp/v1" 
+xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" 
+xmlns:fr.obeo.dsl.dnc.archetype="http://www.obeo.fr/dsl/dnc/archetype" 
+xmlns:td="http://edu.uoc.som/wot/td/1.0" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ecore:nsPrefix="sp" ecore:package="sp" 
+targetNamespace="http://www.examplePrivacySchema.org/wot/sp/v1">
+
+  <xsd:element ecore:ignore="true" name="SituationPrivacyThing" type="sp:SituationPrivacyThing"/>
+  <xsd:element ecore:ignore="true" name="Privacy" type="sp:Privacy"/>
+  <xsd:element ecore:ignore="true" name="Operation" type="sp:Operation"/>
+  <xsd:element ecore:ignore="true" name="Situation" type="sp:Situation"/>
+  <xsd:element ecore:ignore="true" name="PrivacyRequirement" type="sp:PrivacyRequirement"/>
+  <xsd:element ecore:ignore="true" name="SituationProperties" type="sp:SituationProperties"/>
+  <xsd:element ecore:ignore="true" name="PropertyComposition" type="sp:PropertyComposition"/>
+  <xsd:complexType fr.obeo.dsl.dnc.archetype:archetype="Description" name="SituationPrivacyThing">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" maxOccurs="unbounded" minOccurs="0" name="bindSituation" type="sp:Situation"/>
+    </xsd:sequence>
+    <xsd:attribute name="thingName" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType fr.obeo.dsl.dnc.archetype:archetype="Role" name="Privacy">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" name="operationAssignement" type="sp:Operation"/>
+      <xsd:element ecore:resolveProxies="true" maxOccurs="unbounded" minOccurs="0" name="constraintAssignement" type="sp:PrivacyRequirement"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType fr.obeo.dsl.dnc.archetype:archetype="Description" name="Operation">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="operationExecutor" type="sp:SituationPrivacyThing"/>
+      <xsd:element maxOccurs="4" name="operationType" type="sp:OperationType"/>
+    </xsd:sequence>
+    <xsd:attribute name="operationName" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType fr.obeo.dsl.dnc.archetype:archetype="Description" name="Situation">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" maxOccurs="unbounded" name="situationProperties" type="sp:SituationProperties"/>
+      <xsd:element ecore:resolveProxies="true" maxOccurs="unbounded" name="privacyAwareness" type="sp:Privacy"/>
+    </xsd:sequence>
+    <xsd:attribute name="situationName" type="xsd:string"/>
+    <xsd:attribute name="situationPurpose" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType fr.obeo.dsl.dnc.archetype:archetype="Description" name="PrivacyRequirement">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" maxOccurs="unbounded" minOccurs="0" name="requirementsProperties" type="sp:SituationProperties"/>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="requirementThing" type="sp:SituationPrivacyThing"/>
+      <xsd:element ecore:unique="true" maxOccurs="unbounded" minOccurs="0" name="requirementOperation" type="sp:OperationType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType fr.obeo.dsl.dnc.archetype:archetype="Role" name="SituationProperties">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="propertyType" type="xsd:string"/>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="composed" type="sp:PropertyComposition"/>
+    </xsd:sequence>
+    <xsd:attribute name="propertyName" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:complexType name="PropertyComposition">
+    <xsd:sequence>
+      <xsd:element ecore:resolveProxies="true" minOccurs="0" name="situationProperty" type="sp:SituationProperties"/>
+    </xsd:sequence>
+    <xsd:attribute ecore:unsettable="false" name="condition" type="sp:ConditionType"/>
+  </xsd:complexType>
+  <xsd:simpleType name="OperationType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="storeData"/>
+      <xsd:enumeration value="collectData"/>
+      <xsd:enumeration value="transferData"/>
+      <xsd:enumeration value="processData"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ConditionType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="and"/>
+      <xsd:enumeration value="or"/>
+      <xsd:enumeration value="xor"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
